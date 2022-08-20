@@ -1,0 +1,21 @@
+{
+  "name": "MetaMask Legacy Web3",
+  "short_name": "Legacy Web3",
+  "version": "1.0.2",
+  "description": "Adds MetaMask's legacy window.web3 API to your browser",
+  "author": "https://metamask.io",
+  "content_scripts": [
+    {
+      "matches": ["file://*/*", "http://*/*", "https://*/*"],
+      "js": ["contentscript.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "manifest_version": 2
+}
